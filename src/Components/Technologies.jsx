@@ -19,49 +19,62 @@ import {
 
 const Technologies = () => {
   const skills = [
-    { icon: <FaHtml5 />, name: "HTML5" },
-    { icon: <FaCss3 />, name: "CSS3" },
-    { icon: <SiJavascript />, name: "JavaScript" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <FaBootstrap />, name: "Bootstrap" },
-    { icon: <FaReact />, name: "React" },
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <SiExpress />, name: "Express.js" },
-    { icon: <SiMongodb />, name: "MongoDB" },
-    { icon: <FaDatabase />, name: "MongoDB Compass" },
-    { icon: <SiMongoosedotws />, name: "Mongoose" },
-    { icon: <FaGitAlt />, name: "Git" },
-    { icon: <SiVercel />, name: "Vercel" },
+    { icon: <FaHtml5 className="text-[#E34F26]" />, name: "HTML5" },
+    { icon: <FaCss3 className="text-[#1572B6]" />, name: "CSS3" },
+    { icon: <SiJavascript className="text-[#F7DF1E]" />, name: "JavaScript" },
+    { icon: <SiTailwindcss className="text-[#38BDF8]" />, name: "Tailwind CSS" },
+    { icon: <FaBootstrap className="text-[#7952B3]" />, name: "Bootstrap" },
+    { icon: <FaReact className="text-[#61DAFB]" />, name: "React" },
+    { icon: <FaNodeJs className="text-[#3C873A]" />, name: "Node.js" },
+    { icon: <SiExpress className="text-gray-300" />, name: "Express.js" },
+    { icon: <SiMongodb className="text-[#47A248]" />, name: "MongoDB" },
+    { icon: <FaDatabase className="text-gray-400" />, name: "MongoDB Compass" },
+    { icon: <SiMongoosedotws className="text-[#880000]" />, name: "Mongoose" },
+    { icon: <FaGitAlt className="text-[#F05032]" />, name: "Git" },
+    { icon: <SiVercel className="text-white" />, name: "Vercel" },
   ];
+
   return (
-    <div>
-      {/* title */}
-      <div>
-        <h1>Technologies</h1>
+    <div className="text-white px-6 md:px-16 py-24">
+
+      {/* Title */}
+      <div className="text-center mb-14">
+        <h1 className="text-4xl md:text-5xl">
+          Technologies
+        </h1>
+       
       </div>
 
-      {/* frontend, backend, tools*/}
-      <div>
-        <div>Frontend</div>
-        <div>Backend</div>
-        <div>Tools</div>
+      {/* Category labels */}
+      <div className="flex justify-center gap-4 flex-wrap mb-12">
+        {["Frontend", "Backend", "Tools"].map((item) => (
+          <div
+            key={item}
+            className="px-5 py-2 text-sm rounded-full border border-white/10 bg-white/5 text-gray-300 hover:border-yellow-400 transition"
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
-      {/* skills */}
-      <div>
-        <ul>
-          {skills.map((s) => {
-            return (
-              <>
-                <li key={name}>
-                  {s.icon} {s.name}
-                </li>
-              </>
-            );
-          })}
-        </ul>
+      {/* Skills grid */}
+      <div className="flex flex-wrap justify-center gap-5">
+
+        {skills.map((s) => (
+          <div
+            key={s.name}
+            className="flex items-center gap-3 px-5 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:scale-105 transition duration-300 shadow-md hover:border-yellow-400"
+>
+            <span className="text-2xl">{s.icon}</span>
+            <span className="text-sm text-gray-300 whitespace-nowrap">
+              {s.name}
+            </span>
+          </div>
+        ))}
+
       </div>
-      <hr />
+
+      <hr className="mt-20 border-white/10" />
     </div>
   );
 };
