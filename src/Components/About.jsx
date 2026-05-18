@@ -73,7 +73,7 @@ const About = () => {
                 Fast Learner
               </h3>
               <p className="text-sm text-gray-400 mt-1">
-                Currently mastering Node.js, Express.js and MongoDB
+                Currently mastering Node.js, Express.js and PostgreSQL
               </p>
             </div>
 

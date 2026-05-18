@@ -11,10 +11,10 @@ import {
 import {
   SiTailwindcss,
   SiJavascript,
-  SiMongodb,
+  SiPostgresql,
   SiVercel,
   SiExpress,
-  SiMongoosedotws,
+  SiPrisma,
 } from "react-icons/si";
 
 const Technologies = () => {
@@ -27,9 +27,8 @@ const Technologies = () => {
     { icon: <FaReact className="text-[#61DAFB]" />, name: "React" },
     { icon: <FaNodeJs className="text-[#3C873A]" />, name: "Node.js" },
     { icon: <SiExpress className="text-gray-300" />, name: "Express.js" },
-    { icon: <SiMongodb className="text-[#47A248]" />, name: "MongoDB" },
-    { icon: <FaDatabase className="text-gray-400" />, name: "MongoDB Compass" },
-    { icon: <SiMongoosedotws className="text-[#880000]" />, name: "Mongoose" },
+    { icon: <SiPostgresql className="text-[#336791]" />, name: "PostgreSQL" },
+    { icon: <SiPrisma className="text-[#2D3748]" />, name: "Prisma ORM" },
     { icon: <FaGitAlt className="text-[#F05032]" />, name: "Git" },
     { icon: <SiVercel className="text-white" />, name: "Vercel" },
   ];

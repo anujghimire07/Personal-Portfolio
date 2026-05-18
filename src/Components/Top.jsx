@@ -72,7 +72,7 @@ const Top = () => {
             I’m a Full-Stack Developer from Nepal who loves the intersection of
             great design and solid engineering. I craft responsive, modern
             frontends using React and Tailwind CSS, and build reliable, scalable
-            backends with Node.js, Express.js, MongoDB, and RESTful Web APIs. I
+            backends with Node.js, Express.js, PostgreSQL, and RESTful Web APIs. I
             enjoy turning ideas into clean, functional, and user-friendly
             digital experiences.
           </p>
