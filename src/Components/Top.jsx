@@ -64,7 +64,8 @@ const Top = () => {
           <h1 className="text-4xl md:text-5xl  leading-tight">Anuj Ghimire</h1>
 
           <h2 className="text-2xl  tracking-widest bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text">
-            JavaScript | MERN Stack
+            JavaScript | 
+            PERN Stack
           </h2>
 
           <p className="text-gray-400 leading-relaxed max-w-xl">
