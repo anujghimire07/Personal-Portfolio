@@ -326,7 +326,7 @@ const MyProjects = () => {
             </div>
 
             <a
-              href="https://currency-converter-app-sigma-red.vercel.app/"
+              href="https://currency-converter-app-nine-ruby.vercel.app/"
               target="_blank"
               className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
             >
