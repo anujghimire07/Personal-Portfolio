@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/google-sans:vf@5.3.0/latin-wght-normal.woff2) format('woff2-variations');
+}
+
 :root {
   --bg-base: #030712;
   --bg-surface: rgba(255, 255, 255, 0.04);
