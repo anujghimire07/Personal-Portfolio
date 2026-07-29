@@ -28,19 +28,30 @@ const Top = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <a href="/portfolio cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href="/portfolio cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--accent)] text-white font-medium text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-[var(--accent-glow)]">
                   <FiDownload size={16} />
                   Download CV
-                  
                 </button>
               </a>
 
               <div className="flex items-center gap-3">
-                <a href="https://github.com/anujghimire07" target="_blank" className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300">
+                <a
+                  href="https://github.com/anujghimire07"
+                  target="_blank"
+                  className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300"
+                >
                   <FaGithub size={18} />
                 </a>
-                <a href="https://www.linkedin.com/in/anuj-ghimire-788279348/" target="_blank" className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300">
+                <a
+                  href="https://www.linkedin.com/in/anuj-ghimire-788279348/"
+                  target="_blank"
+                  className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300"
+                >
                   <FaLinkedin size={18} />
                 </a>
               </div>
@@ -49,13 +60,13 @@ const Top = () => {
 
           <div className="flex-shrink-0">
             <div className="relative group">
-              <div className="relative w-full max-w-xs sm:w-72 h-[300px] sm:h-[400px] md:w-80 md:h-[440px] rounded-[24px] overflow-hidden border border-[var(--border-base)] group-hover:border-white transition-colors duration-500">
-                <img
-                  src="/MY PIC.jpeg"
-                  alt="Anuj Ghimire"
-                  className="w-full h-full object-cover object-[50%_20%] scale-105 hover:scale-110 transition-transform duration-700"
-                />
-              </div>
+              <div className="relative w-full max-w-xs sm:w-72 md:w-80 h-72 sm:h-80 md:h-88 rounded-[20px] overflow-hidden border border-[var(--border-base)] group-hover:border-white transition-colors duration-500">
+  <img
+    src="/MY PIC.jpeg"
+    alt="Anuj Ghimire"
+    className="w-full h-full object-cover object-[50%_-30%] md:object-[50%_20%] hover:scale-105 transition-transform duration-700"
+  />
+</div>
             </div>
           </div>
         </div>
