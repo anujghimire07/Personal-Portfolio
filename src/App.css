@@ -1,4 +1,53 @@
 @import "tailwindcss";
-*{
-    font-family: "google sans";
+
+:root {
+  --bg-base: #030712;
+  --bg-surface: rgba(255, 255, 255, 0.05);
+  --bg-surface-hover: rgba(255, 255, 255, 0.1);
+  --bg-tag: rgba(255, 255, 255, 0.1);
+  --bg-overlay: rgba(0, 0, 0, 0.6);
+  --bg-inverse: #ffffff;
+  --bg-input: rgba(0, 0, 0, 0.4);
+  --text-base: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --text-inverse: #000000;
+  --border-base: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 1);
+  --gradient-base: rgba(120, 119, 198, 0.3);
 }
+
+.light {
+  --bg-base: #f9fafb;
+  --bg-surface: rgba(0, 0, 0, 0.03);
+  --bg-surface-hover: rgba(0, 0, 0, 0.06);
+  --bg-tag: rgba(0, 0, 0, 0.06);
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --bg-inverse: #111827;
+  --bg-input: rgba(255, 255, 255, 0.8);
+  --text-base: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --text-inverse: #ffffff;
+  --border-base: rgba(0, 0, 0, 0.1);
+  --border-strong: rgba(0, 0, 0, 0.8);
+  --gradient-base: rgba(120, 119, 198, 0.1);
+}
+
+* {
+  font-family: "google sans";
+}
+
+.theme-bg { background-color: var(--bg-base); }
+.theme-surface { background-color: var(--bg-surface); }
+.theme-surface-hover { background-color: var(--bg-surface-hover); }
+.theme-tag { background-color: var(--bg-tag); }
+.theme-overlay { background-color: var(--bg-overlay); }
+.theme-inverse { background-color: var(--bg-inverse); }
+.theme-input { background-color: var(--bg-input); }
+.theme-text { color: var(--text-base); }
+.theme-text-secondary { color: var(--text-secondary); }
+.theme-text-muted { color: var(--text-muted); }
+.theme-text-inverse { color: var(--text-inverse); }
+.theme-border { border-color: var(--border-base); }
+.theme-border-strong { border-color: var(--border-strong); }

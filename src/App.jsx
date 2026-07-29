@@ -1,27 +1,35 @@
-import Top from "./Components/Top";
-import About from "./Components/About";
-import Technologies from "./Components/Technologies";
-import Exp_Edu from "./Components/Exp_Edu";
-import MyProjects from "./Components/MyProjects";
-import GetinTouch from "./Components/GetinTouch";
+import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 import "./App.css";
 
-import { useRef, forwardRef } from "react";
 function App() {
   return (
-    <div className="min-h-screen text-white font-sans relative">
-      
-      {/* Fixed background layer */}
-      <div className="fixed inset-0 -z-10  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-
-      <Top />
-      <About />
-      <Technologies />
-      <Exp_Edu />
-      <MyProjects />
-      <GetinTouch />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen theme-text font-sans relative">
+        <div
+          className="fixed inset-0 -z-10 theme-bg"
+          style={{
+            backgroundImage:
+              "radial-gradient(ellipse 80% 80% at 50% -20%, var(--gradient-base), rgba(255,255,255,0))",
+          }}
+        />
+        <Navbar />
+        <main className="pt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
 

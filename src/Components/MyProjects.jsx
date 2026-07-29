@@ -1,46 +1,42 @@
-import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 
 const MyProjects = () => {
-  
-
   return (
-    <div className="text-white px-6 md:px-16 py-24" id="MyProjects">
+    <div className="px-6 md:px-16 py-24">
       <h1 className="text-4xl md:text-5xl text-center mb-16">
         My Projects
       </h1>
 
       <div className="flex flex-col items-center space-y-16">
-        {/* Nepali Pasal */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="Nepali pasal.jfif"
             alt="ecom website image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">
               Nepali Pasal (E-commerce App)
             </h1>
 
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               A modern E-commerce frontend built with React.js, featuring
               dynamic product listings, responsive design, and smooth user
               experience for browsing and managing cart items
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 React
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 Tailwind
               </span>
             </div>
@@ -56,32 +52,31 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Personal Portfolio */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="PORTFOLIO.jpeg"
             alt="portfolio image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">Portfolio</h1>
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               A personal portfolio website showcasing projects, skills, and
               contact information
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 React
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 Tailwind
               </span>
             </div>
@@ -97,29 +92,28 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* To-Do List App */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="todolist.jfif"
             alt="note app image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">To-Do List App</h1>
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               An application for managing tasks and projects, with features such
               as task creation and tracking
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 React
               </span>
             </div>
@@ -135,29 +129,28 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Timer App */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="timer.jfif"
             alt="timer image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">Timer App</h1>
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               A simple timer app functioning as a stopwatch with start, pause,
               and reset features in a clean and minimal interface.
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 React
               </span>
             </div>
@@ -173,35 +166,34 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Sano Nepali Pasal */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="sano nepali pasal.jfif"
             alt="ecom image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">
               Sano Nepali Pasal (E-commerce App)
             </h1>
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               A modern E-commerce frontend built with React.js, featuring
               dynamic product listings, and smooth user experience for browsing
               and managing cart items
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 React
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 Tailwind
               </span>
             </div>
@@ -217,30 +209,29 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Tic Tac Toe */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="tic tac toe.jfif"
             alt="tic tak toe image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">Tic Tac Toe Game</h1>
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               Simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript,
               featuring two-player gameplay with interactive grid, win
               detection, and reset option in a clean and responsive interface.
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 JavaScript
               </span>
             </div>
@@ -256,17 +247,18 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Rock Paper Scissors */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="rock paper scissors.jfif"
             alt="rock paper scissor"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">Rock Paper Scissors Game</h1>
-            <p className="text-gray-300 text-sm">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
+            <h1 className="text-2xl font-bold">
+              Rock Paper Scissors Game
+            </h1>
+            <p className="theme-text-secondary text-sm">
               Simple Rock Paper Scissors game built using HTML, CSS, and
               JavaScript, featuring user vs computer gameplay with random choice
               generation, score tracking, and instant result display in a clean
@@ -274,13 +266,13 @@ const MyProjects = () => {
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 JavaScript
               </span>
             </div>
@@ -296,17 +288,16 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Currency Converter */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="currency converter.jfif"
             alt="currency converter image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
             <h1 className="text-2xl font-bold">Currency Converter</h1>
-            <p className="text-gray-300 text-sm">
+            <p className="theme-text-secondary text-sm">
               Simple currency converter app built using HTML, CSS, and
               JavaScript, enabling real-time conversion between multiple
               currencies with user input, instant results, and a clean,
@@ -314,13 +305,13 @@ const MyProjects = () => {
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 JavaScript
               </span>
             </div>
@@ -336,17 +327,18 @@ const MyProjects = () => {
           </div>
         </div>
 
-        {/* Shopify */}
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-white ">
+        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
           <img
             src="shopify.jfif"
             alt="ecom image"
             className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
           />
 
-          <div className="child absolute inset-0 bg-black/60 flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">Shopify (E-commerce App)</h1>
-            <p className="text-gray-300 text-sm">
+          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
+            <h1 className="text-2xl font-bold">
+              Shopify (E-commerce App)
+            </h1>
+            <p className="theme-text-secondary text-sm">
               Simple e-commerce website built using HTML, CSS, and React,
               developed with strong assistance from Vibe coding AI, featuring
               product listings, basic cart functionality, and a clean,
@@ -354,13 +346,13 @@ const MyProjects = () => {
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 HTML
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 CSS
               </span>
-              <span className="px-3 py-1 text-xs rounded-full bg-white/10">
+              <span className="px-3 py-1 text-xs rounded-full theme-tag">
                 React
               </span>
             </div>
@@ -377,7 +369,7 @@ const MyProjects = () => {
         </div>
       </div>
 
-      <hr className="mt-20 border-white/10" />
+      <hr className="mt-20 theme-border" />
     </div>
   );
 };
