@@ -26,7 +26,7 @@ export default function Navbar() {
             Home
           </NavLink>
           <NavLink to="/experience" className={linkClass}>
-            Experience
+            Education
           </NavLink>
           <NavLink to="/projects" className={linkClass}>
             Projects
