@@ -1,104 +1,65 @@
-import { Link } from "react-router-dom";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-  FaLayerGroup,
-} from "react-icons/fa";
-
-import { FiDownload } from "react-icons/fi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiDownload, FiArrowUpRight } from "react-icons/fi";
 
 const Top = () => {
   return (
-    <div className="min-h-screen px-6 md:px-16 py-10">
-      <div className="flex items-center justify-end mb-12 gap-5 text-xl">
-        <a
-          href="https://www.instagram.com/anuz_ghimire_/"
-          target="_blank"
-          className="hover:text-pink-400 transition duration-300 hover:scale-110"
-        >
-          <FaInstagram />
-        </a>
+    <div className="min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-[var(--accent-glow)] to-transparent opacity-50" />
 
-        <a
-          href="https://www.facebook.com/anuj.ghimire.12"
-          target="_blank"
-          className="hover:text-blue-400 transition duration-300 hover:scale-110"
-        >
-          <FaFacebook />
-        </a>
+      <div className="relative px-6 md:px-16 pt-32 pb-20 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-16">
+          <div className="flex-1 space-y-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--border-base)] bg-[var(--bg-surface)] text-xs text-[var(--text-muted)]">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              Open for opportunities
+            </div>
 
-        <a
-          href="https://github.com/anujghimire07"
-          target="_blank"
-          className="hover:text-gray-300 transition duration-300 hover:scale-110"
-        >
-          <FaGithub />
-        </a>
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-[var(--text-base)]">
+                Anuj Ghimire
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-medium text-[var(--accent)]">
+                Full-Stack Developer
+              </h2>
+              <p className="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
+                I craft responsive, modern frontends with React & Tailwind, and
+                build reliable backends with Node.js, Express & MongoDB.
+              </p>
+            </div>
 
-        <a
-          href="https://www.linkedin.com/in/anuj-ghimire-788279348/"
-          target="_blank"
-          className="hover:text-sky-400 transition duration-300 hover:scale-110"
-        >
-          <FaLinkedin />
-        </a>
-      </div>
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <a href="/portfolio cv.pdf" target="_blank" rel="noopener noreferrer">
+                <button className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--accent)] text-white font-medium text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-[var(--accent-glow)]">
+                  <FiDownload size={16} />
+                  Download CV
+                  
+                </button>
+              </a>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-6 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl leading-tight">Anuj Ghimire</h1>
-
-          <h2 className="text-2xl tracking-widest bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text">
-            JavaScript | PERN Stack
-          </h2>
-
-          <p className="theme-text-muted leading-relaxed max-w-xl">
-            I&rsquo;m a Full-Stack Developer from Nepal who loves the
-            intersection of great design and solid engineering. I craft
-            responsive, modern frontends using React and Tailwind CSS, and build
-            reliable, scalable backends with Node.js, Express.js, PostgreSQL,
-            and RESTful Web APIs. I enjoy turning ideas into clean, functional,
-            and user-friendly digital experiences.
-          </p>
-
-          <div className="flex flex-wrap gap-4 pt-2">
-            <a
-              href="/portfolio cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl theme-inverse theme-text-inverse font-medium shadow-lg hover:scale-105 transition duration-300">
-                <FiDownload />
-                Download CV
-              </button>
-            </a>
-
-            <Link
-              to="/projects"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-600 theme-text-secondary hover:theme-surface-hover transition duration-300 hover:scale-105"
-            >
-              <FaLayerGroup />
-              See My Work
-            </Link>
+              <div className="flex items-center gap-3">
+                <a href="https://github.com/anujghimire07" target="_blank" className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300">
+                  <FaGithub size={18} />
+                </a>
+                <a href="https://www.linkedin.com/in/anuj-ghimire-788279348/" target="_blank" className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300">
+                  <FaLinkedin size={18} />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="flex justify-center md:justify-end">
-          <div className="relative group w-80 h-[420px] overflow-hidden rounded-2xl border theme-border shadow-xl">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-cyan-500 blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
-
-            <img
-              src="/MY PIC.jpeg"
-              alt="My image"
-              className="relative w-full h-full object-cover object-[50%_20%] scale-105 hover:scale-110 transition duration-500"
-            />
+          <div className="flex-shrink-0">
+            <div className="relative group">
+              <div className="relative w-full max-w-xs sm:w-72 h-[300px] sm:h-[400px] md:w-80 md:h-[440px] rounded-[24px] overflow-hidden border border-[var(--border-base)] group-hover:border-white transition-colors duration-500">
+                <img
+                  src="/MY PIC.jpeg"
+                  alt="Anuj Ghimire"
+                  className="w-full h-full object-cover object-[50%_20%] scale-105 hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <hr className="mt-16 theme-border" />
     </div>
   );
 };

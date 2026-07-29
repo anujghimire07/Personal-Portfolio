@@ -11,16 +11,10 @@ import "./App.css";
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen theme-text font-sans relative">
-        <div
-          className="fixed inset-0 -z-10 theme-bg"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse 80% 80% at 50% -20%, var(--gradient-base), rgba(255,255,255,0))",
-          }}
-        />
+      <div className="min-h-screen bg-[var(--bg-base)] text-[var(--text-base)]">
+        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-[var(--gradient-base)] to-transparent" />
         <Navbar />
-        <main className="pt-16">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<Experience />} />

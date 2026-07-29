@@ -1,53 +1,88 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
+import { Sun, Moon, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const { isDark, toggleTheme } = useTheme();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const linkClass = ({ isActive }) =>
-    `transition duration-300 text-sm ${
+    `relative text-sm font-medium transition-colors duration-300 ${
       isActive
-        ? "text-cyan-400"
-        : "theme-text-secondary hover:text-cyan-400"
+        ? "text-[var(--accent)]"
+        : "text-[var(--text-secondary)] hover:text-[var(--accent)]"
+    }`;
+
+  const mobileLinkClass = ({ isActive }) =>
+    `block px-4 py-3 rounded-xl text-sm font-medium transition-colors duration-300 ${
+      isActive
+        ? "text-[var(--accent)] bg-[var(--bg-surface)]"
+        : "text-[var(--text-secondary)] hover:text-[var(--accent)] hover:bg-[var(--bg-surface)]"
     }`;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 theme-bg/80 backdrop-blur-md border-b theme-border">
-      <div className="max-w-7xl mx-auto px-6 md:px-16 h-16 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      <div className="absolute inset-0 bg-[var(--bg-base)]/70 backdrop-blur-xl border-b border-[var(--border-base)]" />
+      <div className="relative max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <NavLink
           to="/"
-          className="text-2xl font-bold tracking-widest bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text"
+          className="text-xl font-bold tracking-tight text-[var(--text-base)]"
+          onClick={() => setMobileOpen(false)}
         >
-          AG
+          Anuj<span className="text-[var(--accent)]">.</span>
         </NavLink>
 
-        <div className="flex items-center gap-6 font-medium">
-          <NavLink to="/" end className={linkClass}>
-            Home
-          </NavLink>
-          <NavLink to="/experience" className={linkClass}>
-            Education
-          </NavLink>
-          <NavLink to="/projects" className={linkClass}>
-            Projects
-          </NavLink>
-          <NavLink to="/contact" className={linkClass}>
-            Contact
-          </NavLink>
+        <div className="flex items-center gap-4">
+          <div className="hidden sm:flex items-center gap-8">
+            <NavLink to="/" end className={linkClass}>
+              Home
+            </NavLink>
+            <NavLink to="/experience" className={linkClass}>
+              Education
+            </NavLink>
+            <NavLink to="/projects" className={linkClass}>
+              Projects
+            </NavLink>
+            <NavLink to="/contact" className={linkClass}>
+              Contact
+            </NavLink>
+          </div>
 
           <button
             onClick={toggleTheme}
-            className="relative w-10 h-5 rounded-full bg-gray-500 cursor-pointer transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 hover:bg-gray-400"
-            aria-label="Toggle theme"
+            className="relative w-9 h-9 rounded-full border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300 cursor-pointer"
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
-            <span
-              className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white transition-transform duration-300 ${
-                isDark ? "translate-x-0" : "translate-x-5"
-              }`}
-            />
+            {isDark ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
+
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="sm:hidden relative w-9 h-9 rounded-full border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300 cursor-pointer"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={15} /> : <Menu size={15} />}
           </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div className="sm:hidden absolute top-16 left-0 right-0 bg-[var(--bg-base)]/95 backdrop-blur-xl border-b border-[var(--border-base)] px-6 py-4 space-y-2">
+          <NavLink to="/" end className={mobileLinkClass} onClick={() => setMobileOpen(false)}>
+            Home
+          </NavLink>
+          <NavLink to="/experience" className={mobileLinkClass} onClick={() => setMobileOpen(false)}>
+            Education
+          </NavLink>
+          <NavLink to="/projects" className={mobileLinkClass} onClick={() => setMobileOpen(false)}>
+            Projects
+          </NavLink>
+          <NavLink to="/contact" className={mobileLinkClass} onClick={() => setMobileOpen(false)}>
+            Contact
+          </NavLink>
+        </div>
+      )}
     </nav>
   );
 }

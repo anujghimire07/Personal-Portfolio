@@ -1,375 +1,129 @@
-import { FiExternalLink } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
+
+const projects = [
+  {
+    title: "Nepali Pasal",
+    desc: "A modern E-commerce frontend built with React.js, featuring dynamic product listings and responsive design.",
+    tags: ["React", "Tailwind", "CSS"],
+    img: "Nepali pasal.jfif",
+    link: "https://nepali-pasal-ecom.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    desc: "A personal portfolio website showcasing projects, skills, and contact information.",
+    tags: ["React", "Tailwind", "CSS"],
+    img: "PORTFOLIO.jpeg",
+    link: "",
+  },
+  {
+    title: "To-Do List App",
+    desc: "An application for managing tasks and projects, with features such as task creation and tracking.",
+    tags: ["React", "CSS"],
+    img: "todolist.jfif",
+    link: "https://to-do-list-app-pi-vert.vercel.app/",
+  },
+  {
+    title: "Timer App",
+    desc: "A simple timer app with start, pause, and reset features in a clean and minimal interface.",
+    tags: ["React", "CSS"],
+    img: "timer.jfif",
+    link: "https://timer-app-sigma-nine.vercel.app/",
+  },
+  {
+    title: "Sano Nepali Pasal",
+    desc: "A modern E-commerce frontend built with React.js with dynamic product listings and smooth UX.",
+    tags: ["React", "Tailwind", "CSS"],
+    img: "sano nepali pasal.jfif",
+    link: "https://sano-nepali-pasal.vercel.app/",
+  },
+  {
+    title: "Tic Tac Toe",
+    desc: "Two-player gameplay with interactive grid, win detection, and reset option.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "tic tac toe.jfif",
+    link: "https://tic-tac-toe-game-ten-coral.vercel.app/",
+  },
+  {
+    title: "Rock Paper Scissors",
+    desc: "User vs computer with random choice generation and score tracking.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "rock paper scissors.jfif",
+    link: "https://rock-paper-scissors-game-eta-one.vercel.app/",
+  },
+  {
+    title: "Currency Converter",
+    desc: "Real-time conversion between multiple currencies with instant results.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    img: "currency converter.jfif",
+    link: "https://currency-converter-app-nine-ruby.vercel.app/",
+  },
+  {
+    title: "Shopify",
+    desc: "Simple e-commerce website with product listings and basic cart functionality.",
+    tags: ["React", "CSS"],
+    img: "shopify.jfif",
+    link: "https://shopify-a-demo-ecom.vercel.app/",
+  },
+];
 
 const MyProjects = () => {
   return (
     <div className="px-6 md:px-16 py-24">
-      <h1 className="text-4xl md:text-5xl text-center mb-16">
-        My Projects
-      </h1>
-
-      <div className="flex flex-col items-center space-y-16">
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="Nepali pasal.jfif"
-            alt="ecom website image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">
-              Nepali Pasal (E-commerce App)
-            </h1>
-
-            <p className="theme-text-secondary text-sm">
-              A modern E-commerce frontend built with React.js, featuring
-              dynamic product listings, responsive design, and smooth user
-              experience for browsing and managing cart items
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                React
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                Tailwind
-              </span>
-            </div>
-
-            <a
-              href="https://nepali-pasal-ecom.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--text-muted)]">
+            Work
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-3 text-[var(--text-base)]">
+            My Projects
+          </h2>
         </div>
 
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="PORTFOLIO.jpeg"
-            alt="portfolio image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">Portfolio</h1>
-            <p className="theme-text-secondary text-sm">
-              A personal portfolio website showcasing projects, skills, and
-              contact information
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                React
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                Tailwind
-              </span>
-            </div>
-
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((p) => (
             <a
-              href=""
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
+              key={p.title}
+              href={p.link || "#"}
+              target={p.link ? "_blank" : undefined}
+              rel={p.link ? "noopener noreferrer" : undefined}
+              className="group relative h-60 sm:h-72 rounded-2xl overflow-hidden border border-[var(--border-base)] hover:border-white transition-all duration-500"
             >
-              <FiExternalLink />
-              Open Live Demo
+              <img
+                src={p.img}
+                alt={p.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-semibold text-white group-hover:text-[var(--accent)] transition-colors">
+                    {p.title}
+                  </h3>
+                  {p.link && (
+                    <FiArrowUpRight
+                      size={16}
+                      className="text-white/70 group-hover:text-[var(--accent)] transition-colors"
+                    />
+                  )}
+                </div>
+                <p className="text-sm text-white/80 leading-relaxed line-clamp-2">
+                  {p.desc}
+                </p>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {p.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="px-2.5 py-1 text-xs rounded-full border border-white/20 bg-white/10 text-white/70"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="todolist.jfif"
-            alt="note app image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">To-Do List App</h1>
-            <p className="theme-text-secondary text-sm">
-              An application for managing tasks and projects, with features such
-              as task creation and tracking
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                React
-              </span>
-            </div>
-
-            <a
-              href="https://to-do-list-app-pi-vert.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="timer.jfif"
-            alt="timer image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">Timer App</h1>
-            <p className="theme-text-secondary text-sm">
-              A simple timer app functioning as a stopwatch with start, pause,
-              and reset features in a clean and minimal interface.
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                React
-              </span>
-            </div>
-
-            <a
-              href="https://timer-app-sigma-nine.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="sano nepali pasal.jfif"
-            alt="ecom image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">
-              Sano Nepali Pasal (E-commerce App)
-            </h1>
-            <p className="theme-text-secondary text-sm">
-              A modern E-commerce frontend built with React.js, featuring
-              dynamic product listings, and smooth user experience for browsing
-              and managing cart items
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                React
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                Tailwind
-              </span>
-            </div>
-
-            <a
-              href="https://sano-nepali-pasal.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="tic tac toe.jfif"
-            alt="tic tak toe image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">Tic Tac Toe Game</h1>
-            <p className="theme-text-secondary text-sm">
-              Simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript,
-              featuring two-player gameplay with interactive grid, win
-              detection, and reset option in a clean and responsive interface.
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                JavaScript
-              </span>
-            </div>
-
-            <a
-              href="https://tic-tac-toe-game-ten-coral.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="rock paper scissors.jfif"
-            alt="rock paper scissor"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">
-              Rock Paper Scissors Game
-            </h1>
-            <p className="theme-text-secondary text-sm">
-              Simple Rock Paper Scissors game built using HTML, CSS, and
-              JavaScript, featuring user vs computer gameplay with random choice
-              generation, score tracking, and instant result display in a clean
-              interface.
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                JavaScript
-              </span>
-            </div>
-
-            <a
-              href="https://rock-paper-scissors-game-eta-one.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="currency converter.jfif"
-            alt="currency converter image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">Currency Converter</h1>
-            <p className="theme-text-secondary text-sm">
-              Simple currency converter app built using HTML, CSS, and
-              JavaScript, enabling real-time conversion between multiple
-              currencies with user input, instant results, and a clean,
-              responsive interface.
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                JavaScript
-              </span>
-            </div>
-
-            <a
-              href="https://currency-converter-app-nine-ruby.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="parent group relative w-full md:w-[80%] h-[420px] rounded-2xl overflow-hidden border theme-border transition-all duration-300 hover:theme-border-strong">
-          <img
-            src="shopify.jfif"
-            alt="ecom image"
-            className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
-          />
-
-          <div className="child absolute inset-0 theme-overlay flex flex-col justify-end p-8 space-y-3">
-            <h1 className="text-2xl font-bold">
-              Shopify (E-commerce App)
-            </h1>
-            <p className="theme-text-secondary text-sm">
-              Simple e-commerce website built using HTML, CSS, and React,
-              developed with strong assistance from Vibe coding AI, featuring
-              product listings, basic cart functionality, and a clean,
-              responsive user interface.
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-xs rounded-full theme-tag">
-                React
-              </span>
-            </div>
-
-            <a
-              href="https://shopify-a-demo-ecom.vercel.app/"
-              target="_blank"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-            >
-              <FiExternalLink />
-              Open Live Demo
-            </a>
-          </div>
+          ))}
         </div>
       </div>
-
-      <hr className="mt-20 theme-border" />
     </div>
   );
 };

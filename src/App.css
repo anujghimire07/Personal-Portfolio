@@ -2,40 +2,44 @@
 
 :root {
   --bg-base: #030712;
-  --bg-surface: rgba(255, 255, 255, 0.05);
-  --bg-surface-hover: rgba(255, 255, 255, 0.1);
-  --bg-tag: rgba(255, 255, 255, 0.1);
-  --bg-overlay: rgba(0, 0, 0, 0.6);
-  --bg-inverse: #ffffff;
-  --bg-input: rgba(0, 0, 0, 0.4);
-  --text-base: #ffffff;
-  --text-secondary: #d1d5db;
-  --text-muted: #9ca3af;
-  --text-inverse: #000000;
-  --border-base: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 1);
-  --gradient-base: rgba(120, 119, 198, 0.3);
+  --bg-surface: rgba(255, 255, 255, 0.04);
+  --bg-surface-hover: rgba(255, 255, 255, 0.08);
+  --bg-tag: rgba(255, 255, 255, 0.08);
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+  --bg-inverse: #f8fafc;
+  --bg-input: rgba(255, 255, 255, 0.05);
+  --text-base: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0f172a;
+  --border-base: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.5);
+  --gradient-base: rgba(245, 158, 11, 0.12);
+  --accent: #f59e0b;
+  --accent-glow: rgba(245, 158, 11, 0.2);
 }
 
 .light {
-  --bg-base: #f9fafb;
-  --bg-surface: rgba(0, 0, 0, 0.03);
-  --bg-surface-hover: rgba(0, 0, 0, 0.06);
-  --bg-tag: rgba(0, 0, 0, 0.06);
-  --bg-overlay: rgba(0, 0, 0, 0.4);
-  --bg-inverse: #111827;
-  --bg-input: rgba(255, 255, 255, 0.8);
-  --text-base: #111827;
-  --text-secondary: #4b5563;
-  --text-muted: #6b7280;
-  --text-inverse: #ffffff;
-  --border-base: rgba(0, 0, 0, 0.1);
-  --border-strong: rgba(0, 0, 0, 0.8);
-  --gradient-base: rgba(120, 119, 198, 0.1);
+  --bg-base: #f8fafc;
+  --bg-surface: rgba(0, 0, 0, 0.02);
+  --bg-surface-hover: rgba(0, 0, 0, 0.05);
+  --bg-tag: rgba(0, 0, 0, 0.05);
+  --bg-overlay: rgba(255, 255, 255, 0.7);
+  --bg-inverse: #0f172a;
+  --bg-input: rgba(0, 0, 0, 0.02);
+  --text-base: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-inverse: #f8fafc;
+  --border-base: rgba(0, 0, 0, 0.06);
+  --border-strong: rgba(0, 0, 0, 0.3);
+  --gradient-base: rgba(217, 119, 6, 0.08);
+  --accent: #d97706;
+  --accent-glow: rgba(217, 119, 6, 0.15);
 }
 
 * {
-  font-family: "google sans";
+  font-family: "Google Sans", system-ui, -apple-system, sans-serif;
 }
 
 .theme-bg { background-color: var(--bg-base); }
@@ -51,3 +55,5 @@
 .theme-text-inverse { color: var(--text-inverse); }
 .theme-border { border-color: var(--border-base); }
 .theme-border-strong { border-color: var(--border-strong); }
+.theme-accent { color: var(--accent); }
+.theme-accent-border { border-color: var(--accent); }
