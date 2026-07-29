@@ -60,13 +60,13 @@ const Top = () => {
 
           <div className="flex-shrink-0">
             <div className="relative group">
-              <div className="relative w-full max-w-xs sm:w-72 md:w-80 h-72 sm:h-80 md:h-88 rounded-[20px] overflow-hidden border border-[var(--border-base)] group-hover:border-white transition-colors duration-500">
-  <img
-    src="/MY PIC.jpeg"
-    alt="Anuj Ghimire"
-    className="w-full h-full object-cover object-[50%_-30%] md:object-[50%_20%] hover:scale-105 transition-transform duration-700"
-  />
-</div>
+              <div className="relative w-full max-w-xs sm:w-72 md:w-80 h-full sm:h-100 md:h-105 rounded-[20px] overflow-hidden border border-[var(--border-base)] group-hover:border-white transition-colors duration-500">
+                <img
+                  src="/MY PIC.jpeg"
+                  alt="Anuj Ghimire"
+                  className="w-full h-full object-cover md:object-[60%_20%] hover:scale-105 transition-transform duration-700"
+                />
+              </div>
             </div>
           </div>
         </div>
