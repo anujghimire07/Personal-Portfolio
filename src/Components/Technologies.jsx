@@ -3,7 +3,7 @@ import {
 } from "react-icons/fa";
 import {
   SiTailwindcss, SiJavascript, SiPostgresql, SiVercel, SiExpress,
-  SiMongoose, SiMongodb, SiJsonwebtokens, SiPostman,
+  SiMongoose, SiMongodb, SiJsonwebtokens, SiPostman, SiRender,
 } from "react-icons/si";
 
 const Technologies = () => {
@@ -35,7 +35,8 @@ const Technologies = () => {
       skills: [
         { icon: <FaGitAlt />, name: "Git", color: "#F05032" },
         { icon: <SiPostman />, name: "Postman", color: "#FF6C37" },
-        { icon: <SiVercel />, name: "Vercel", color: "#94a3b8" },
+        { icon: <SiVercel />, name: "Vercel", color: "#FFFFFF" },
+        { icon: <SiRender />, name: "Render", color: "#FFFFFF" },
       ],
     },
   ];
