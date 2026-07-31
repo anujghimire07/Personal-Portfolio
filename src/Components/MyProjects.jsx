@@ -2,6 +2,13 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const projects = [
   {
+    title: "Kivo",
+    desc: "A full-stack task manager application built with the MERN stack, where users can create accounts, add, and organize their tasks.",
+    tags: ["React", "MongoDB", "Express", "Node.js", "JWT"],
+    img: "KIVO.png",
+    link: "https://kivo-gules.vercel.app",
+  },
+  {
     title: "Nepali Pasal",
     desc: "A modern E-commerce frontend built with React.js, featuring dynamic product listings and responsive design.",
     tags: ["React", "Tailwind", "CSS"],
