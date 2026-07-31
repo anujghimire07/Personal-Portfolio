@@ -36,13 +36,7 @@ const projects = [
     img: "timer.jfif",
     link: "https://timer-app-sigma-nine.vercel.app/",
   },
-  {
-    title: "Sano Nepali Pasal",
-    desc: "A modern E-commerce frontend built with React.js with dynamic product listings and smooth UX.",
-    tags: ["React", "Tailwind", "CSS"],
-    img: "sano nepali pasal.jfif",
-    link: "https://sano-nepali-pasal.vercel.app/",
-  },
+
   {
     title: "Tic Tac Toe",
     desc: "Two-player gameplay with interactive grid, win detection, and reset option.",
@@ -64,13 +58,7 @@ const projects = [
     img: "currency converter.jfif",
     link: "https://currency-converter-app-nine-ruby.vercel.app/",
   },
-  {
-    title: "Shopify",
-    desc: "Simple e-commerce website with product listings and basic cart functionality.",
-    tags: ["React", "CSS"],
-    img: "shopify.jfif",
-    link: "https://shopify-a-demo-ecom.vercel.app/",
-  },
+
 ];
 
 const MyProjects = () => {

@@ -66,7 +66,13 @@ const Technologies = () => {
                     className="group flex items-center gap-3 px-5 py-3 rounded-2xl border border-[var(--border-base)] bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-hover)] hover:border-[var(--accent)] transition-all duration-300"
                   >
                     <span className="text-xl" style={{ color: s.color }}>
-                      {s.icon}
+                      {s.name === "Vercel" || s.name === "Render" ? (
+                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-black">
+                          <span className="text-white">{s.icon}</span>
+                        </span>
+                      ) : (
+                        s.icon
+                      )}
                     </span>
                     <span className="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--text-base)] transition-colors">
                       {s.name}
