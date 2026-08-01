@@ -1,18 +1,60 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website for **Anuj Ghimire**, built with React, Vite, and Tailwind CSS.
 
-click for live demo: https://anuj-ghimire-portfolio.vercel.app/
+**Live Demo:** https://anuj-ghimire-portfolio.vercel.app/
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** – Hero section with a downloadable CV and social links
+- **About** – Overview and background
+- **Technologies** – Skills organized into Frontend, Backend, and Tools
+- **Experience** – Work experience and education timeline
+- **Projects** – Showcase of projects with links to live demos
+- **Contact** – Contact form powered by Formspree
+- **Dark/Light theme** – Toggleable via Theme Context
+- **Responsive design** – Mobile-first layouts across all sections
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev) 19
+- [Vite](https://vite.dev)
+- [Tailwind CSS](https://tailwindcss.com) 4
+- [React Router](https://reactrouter.com) 7
+- [React Icons](https://react-icons.github.io/react-icons/) & [Lucide](https://lucide.dev)
+- [Formspree](https://formspree.io) for the contact form
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js and npm installed
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd "Personal Portfolio"
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Open http://localhost:5173 to view it in the browser.
+
+## Available Scripts
+
+| Command           | Description                        |
+| ----------------- | ---------------------------------- |
+| `npm run dev`     | Start the development server       |
+| `npm run build`   | Build the project for production   |
+| `npm run preview` | Preview the production build       |
+| `npm run lint`    | Run ESLint                         |
+
+## Deployment
+
+This site is deployed on [Vercel](https://vercel.com). Pushing to the connected Git repository triggers an automatic deployment.
