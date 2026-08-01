@@ -29,7 +29,7 @@ const Top = () => {
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
-                href="/portfolio cv.pdf"
+                href="/Anuj_Ghimire_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
