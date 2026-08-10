@@ -9,6 +9,14 @@ const projects = [
     link: "https://kivo-gules.vercel.app",
   },
   {
+    title: "QuizMaster",
+    desc: "A full-stack quiz application built with the MERN stack, where users can sign up, log in, and take quizzes with JWT-secured authentication. Built as a final year project with a team of three members.",
+    tags: ["React", "MongoDB", "Express", "Node.js", "JWT"],
+    isFinalYear: true,
+    img: "quiz master.png",
+    link: "https://quiz-app-mern-gamma.vercel.app/",
+  },
+  {
     title: "Nepali Pasal",
     desc: "A modern E-commerce frontend built with React.js, featuring dynamic product listings and responsive design.",
     tags: ["React", "Tailwind", "CSS"],
@@ -105,6 +113,11 @@ const MyProjects = () => {
                   {p.desc}
                 </p>
                 <div className="flex flex-wrap gap-2 pt-1">
+                  {p.isFinalYear && (
+                    <span className="px-2.5 py-1 text-xs rounded-full border border-white/20 bg-white/10 text-white/70">
+                      Final Year Project
+                    </span>
+                  )}
                   {p.tags.map((t) => (
                     <span
                       key={t}
