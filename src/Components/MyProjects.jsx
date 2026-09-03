@@ -3,10 +3,17 @@ import { FiArrowUpRight } from "react-icons/fi";
 const projects = [
   {
     title: "Kivo",
-    desc: "A full-stack task manager application built with the MERN stack, where users can create accounts, add, and organize their tasks.",
-    tags: ["React", "MongoDB", "Express", "Node.js", "JWT"],
+    desc: "A calm, minimal task manager landing page where users can organize their day, set priorities, and track progress.",
+    tags: ["React", "Tailwind", "CSS"],
     img: "KIVO.png",
-    link: "https://kivo-gules.vercel.app",
+    link: "https://kivo-gules.vercel.app/",
+  },
+  {
+    title: "BuildPro",
+    desc: "A construction company landing page showcasing projects, services, and team with a modern, professional layout.",
+    tags: ["React", "Tailwind", "CSS"],
+    img: "Buildpro.png",
+    link: "https://buildpro-a-landing-page.vercel.app/",
   },
   {
     title: "QuizMaster",
