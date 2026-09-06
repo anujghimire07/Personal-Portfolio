@@ -22,8 +22,8 @@ const Top = () => {
                 Full-Stack Developer
               </h2>
               <p className="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
-                I craft responsive, modern frontends with React & Tailwind, and
-                build reliable backends with Node.js, Express & MongoDB.
+                I craft responsive, modern frontends with React, Next.js & Tailwind, and
+                build reliable backends with Node.js, Express, MongoDB & JWT.
               </p>
             </div>
 
@@ -33,7 +33,7 @@ const Top = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--accent)] text-white font-medium text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-[var(--accent-glow)]">
+                <button className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-(--accent) text-white font-medium text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-(--accent-glow)">
                   <FiDownload size={16} />
                   Download CV
                 </button>
@@ -43,14 +43,14 @@ const Top = () => {
                 <a
                   href="https://github.com/anujghimire07"
                   target="_blank"
-                  className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300"
+                  className="w-10 h-10 rounded-xl border border-(--border-base) bg-(--bg-surface) flex items-center justify-center text-(--text-secondary) hover:text-(--accent) hover:border-(--accent) transition-all duration-300"
                 >
                   <FaGithub size={18} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/anuj-ghimire-788279348/"
                   target="_blank"
-                  className="w-10 h-10 rounded-xl border border-[var(--border-base)] bg-[var(--bg-surface)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-all duration-300"
+                  className="w-10 h-10 rounded-xl border border-(--border-base) bg-(--bg-surface) flex items-center justify-center text-(--text-secondary) hover:text-(--accent) hover:border-(--accent) transition-all duration-300"
                 >
                   <FaLinkedin size={18} />
                 </a>
@@ -58,9 +58,9 @@ const Top = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <div className="relative group">
-              <div className="relative w-full max-w-xs sm:w-72 md:w-80 h-full sm:h-100 md:h-105 rounded-[20px] overflow-hidden border border-[var(--border-base)] group-hover:border-white transition-colors duration-500">
+              <div className="relative w-full max-w-xs sm:w-72 md:w-80 h-full sm:h-100 md:h-105 rounded-[20px] overflow-hidden border border-(--border-base) group-hover:border-white transition-colors duration-500">
                 <img
                   src="/MY PIC.jpeg"
                   alt="Anuj Ghimire"

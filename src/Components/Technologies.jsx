@@ -4,6 +4,7 @@ import {
 import {
   SiTailwindcss, SiJavascript, SiPostgresql, SiVercel, SiExpress,
   SiMongoose, SiMongodb, SiJsonwebtokens, SiPostman, SiRender,
+  SiNextdotjs, SiTypescript, SiZod,
 } from "react-icons/si";
 
 const Technologies = () => {
@@ -17,6 +18,9 @@ const Technologies = () => {
         { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "#38BDF8" },
         { icon: <FaBootstrap />, name: "Bootstrap", color: "#7952B3" },
         { icon: <FaReact />, name: "React", color: "#61DAFB" },
+        { icon: <SiNextdotjs />, name: "Next.js", color: "#FFFFFF" },
+        { icon: <SiTypescript />, name: "TypeScript", color: "#3178C6" },
+        { icon: <SiZod />, name: "Zod", color: "#3E67B1" },
       ],
     },
     {
@@ -66,7 +70,7 @@ const Technologies = () => {
                     className="group flex items-center gap-3 px-5 py-3 rounded-2xl border border-[var(--border-base)] bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-hover)] hover:border-[var(--accent)] transition-all duration-300"
                   >
                     <span className="text-xl" style={{ color: s.color }}>
-                      {s.name === "Vercel" || s.name === "Render" ? (
+                      {s.name === "Vercel" || s.name === "Render" || s.name === "Next.js" ? (
                         <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-black">
                           <span className="text-white">{s.icon}</span>
                         </span>

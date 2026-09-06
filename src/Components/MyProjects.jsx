@@ -2,22 +2,29 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const projects = [
   {
-    title: "Kivo",
-    desc: "A calm, minimal task manager landing page where users can organize their day, set priorities, and track progress.",
-    tags: ["React", "Tailwind", "CSS"],
+    title: "KIVO",
+    desc: "A calm, minimal task manager app where users can organize their day, set priorities, and track progress.",
+    tags: ["React", "Tailwind", "CSS", "Next.js", "Node.js", "Express", "MongoDB", "JWT"],
     img: "KIVO.png",
     link: "https://kivo-gules.vercel.app/",
   },
   {
     title: "BuildPro",
-    desc: "A construction company landing page showcasing projects, services, and team with a modern, professional layout.",
+    desc: "A construction company landing page with a modern, professional layout.",
     tags: ["React", "Tailwind", "CSS"],
     img: "Buildpro.png",
     link: "https://buildpro-a-landing-page.vercel.app/",
   },
+   {
+    title: "KIVO -Landing Page",
+    desc: "A calm, minimal task manager landing page where users can set their priorities, and track progress.",
+    tags: ["React", "Tailwind", "CSS", "Next.js", "Zod", "Typescript"],
+    img: "Kivolandingpage.jfif",
+    link: "https://kivo-landing-page-five.vercel.app/",
+  },
   {
     title: "QuizMaster",
-    desc: "A full-stack quiz application built with the MERN stack, where users can sign up, log in, and take quizzes with JWT-secured authentication. Built as a final year project with a team of three members.",
+    desc: "A full-stack quiz application, where users can sign up, log in, and take quizzes",
     tags: ["React", "MongoDB", "Express", "Node.js", "JWT"],
     isFinalYear: true,
     img: "quiz master.png",
@@ -25,7 +32,7 @@ const projects = [
   },
   {
     title: "Nepali Pasal",
-    desc: "A modern E-commerce frontend built with React.js, featuring dynamic product listings and responsive design.",
+    desc: "A modern responsive E-commerce frontend built with React.js, with dynamic product listings.",
     tags: ["React", "Tailwind", "CSS"],
     img: "Nepali pasal.jfif",
     link: "https://nepali-pasal-ecom.vercel.app/",
