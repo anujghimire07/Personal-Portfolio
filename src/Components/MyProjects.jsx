@@ -15,13 +15,13 @@ const projects = [
     img: "Buildpro.png",
     link: "https://buildpro-a-landing-page.vercel.app/",
   },
-   {
-    title: "KIVO -Landing Page",
-    desc: "A calm, minimal task manager landing page where users can set their priorities, and track progress.",
-    tags: ["React", "Tailwind", "CSS", "Next.js", "Zod", "Typescript"],
-    img: "Kivolandingpage.jfif",
-    link: "https://kivo-landing-page-five.vercel.app/",
-  },
+  //  {
+  //   title: "KIVO -Landing Page",
+  //   desc: "A calm, minimal task manager landing page where users can set their priorities, and track progress.",
+  //   tags: ["React", "Tailwind", "CSS", "Next.js", "Zod", "Typescript"],
+  //   img: "Kivolandingpage.jfif",
+  //   link: "https://kivo-landing-page-five.vercel.app/",
+  // },
   {
     title: "QuizMaster",
     desc: "A full-stack quiz application, where users can sign up, log in, and take quizzes",
